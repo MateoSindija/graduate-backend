@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "niko-excursion-backend",
+      "script": "ts-node",
+      "args": "-r tsconfig-paths/register -p src/main.ts",
+      "watch": true,
+      "ignore_watch": ["public", "./public/", "logs", "./logs/"],
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "env_development": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}

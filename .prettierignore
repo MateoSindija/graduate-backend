@@ -1,0 +1,8 @@
+# Ignore artifacts:
+coverage
+
+public
+node_modules
+*-lock.json
+package.json
+tsconfig.json

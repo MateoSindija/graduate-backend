@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": false,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": 2022
+    // ES2022
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "no-console": "warn",
+    // Throw an error if we have any console calls in the code
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    // Always force the usage of ===
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/ban-ts-comment": "off"
+  }
+}
